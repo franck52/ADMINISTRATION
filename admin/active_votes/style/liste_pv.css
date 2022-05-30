@@ -1,0 +1,52 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+.nbr_pv_dispo{
+	padding-left: 10%;
+	margin-top: 30px;
+	color: blue;
+	font-size: 20px;
+	font-family: cursive;
+}
+#rep_pv_container{
+	position: relative;
+	background: beige;
+	justify-content: center;
+	display: block;
+	padding-left: 8%;
+}
+.le_pv_du_centre{
+	box-shadow: -3px 3px 0px 4px #c3c39e;
+	margin-top: 20px;
+	width: 90%;
+}
+.entete{
+	/*text-align: center;*/
+	padding-left: 10%;
+	padding-bottom: 20px;
+}
+
+.contenu_pv{
+	padding-left: 5%;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+.h_pv_id{
+	padding-top: 20px;
+	justify-content: space-between;
+}
+.mon_entete_span{
+	padding-right: 20px;
+	font-size: 20px;
+	font-family: cursive;
+}
+.mon_entete_span_id{
+	font-size: 20px;
+	
+}
+.h_pv{
+	padding-bottom: 5px;
+}

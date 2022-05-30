@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<style type="text/css">
+		@font-face{
+			font-family: myFontHead;
+			src: url(../fonts/fontawesome-webfont.eot);
+		}
+		.wrapper{
+			max-width:900px;
+			min-height:500px ;
+			display:flex;
+			margin: auto;
+			color: white;
+			font-size: 13px;
+
+		}
+		#left_pannel{
+			min-height: 500px;
+			background-color: #27344b;
+			flex: 1;
+			font-family: cursive;
+			text-align: center;
+			
+
+		}
+		#profil_img{
+			border: solid thin white;
+			border-radius: 50%;
+			height:50px;
+			width: 20%;
+			margin: 10px;
+		}
+		#left_pannel label{
+			width: 100%;
+			height: 20px;
+			display: block;
+			margin: 10px;
+			padding: 5px; 
+			background: #404b56;
+			border-bottom: solid thin #fffff555;
+			cursor: pointer;
+			/* transition changer la couleur de fond*/
+			transition: all 1s ease;
+		}
+		#left_pannel label:hover{
+			background-color: #778593;
+		}
+		#left_pannel label img{
+			float: right;
+			width: 25px;
+		}
+		#right_pannel{
+			min-height: 500px;
+			/*background-color: green;*/
+			flex: 2;
+		}
+		#header{
+			background-color: #485b6c;
+			color: white;
+			height: 70px;
+			font-family:cursive ;
+			font-size:40px ;
+			text-align: center;
+		}
+		#inner_left_pannel{
+			background: #383e48;
+			flex:3 ;
+			min-height: 430px;
+			text-align: center;
+		}
+		#inner_center_pannel{
+			background: #black;
+			flex: 0;
+			min-height: 430px;
+			text-align: center;
+		}
+		#inner_right_pannel{
+			/*background-color: #f2f7f8;*/
+			background: green;
+			flex: 0;
+			min-height: 430px;
+			transition: all 2s ease;
+			
+		}
+		#pv_radio:checked ~ #inner_center_pannel{
+			flex: 3;
+
+			
+		}
+		#pv_radio:checked ~ input{
+			display: block;
+			visibility: visible;
+
+			
+		}
+		#bull_radio:checked ~ #inner_right_pannel{
+			flex: 3; 
+			background:blue;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper" id="wrapper">
+		<div id="left_pannel">
+			<div style="padding: 10px">
+				<img src="./user.jpg" alt="" id="profil_img">
+			    <br>
+			    Admin
+			    <br>
+			   <span style="font-size: 12px; opacity: 0.5">admin@gmail.com</span>
+			   <br>
+			   <br>
+			   <br>
+			   <br>
+			   <div>
+			     	<label id="label_pv" for="pv_radio">PV</label>
+			        <label id="label_bull" for="bull_radio">BULLETINS</label>
+			   </div>
+			   
+			</div>
+		</div>
+		<div id="right_pannel">
+			<div id="header">My Chat</div>
+			<div id="container" style="display: flex;">
+				<div id="inner_left_pannel">
+					
+				</div>
+				<input type="radio" id="pv_radio" name="myradio" style="display:none; ;">
+				<input type="radio" id="bull_radio" name="myradio" style="display:none; ;">
+				<div id="inner_center_pannel">
+					<form>
+						<input type="text" name="" style="display:">
+
+					</form>
+				</div>
+				<div id="inner_right_pannel"></div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

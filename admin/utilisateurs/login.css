@@ -1,0 +1,39 @@
+/*#dv_container{
+	display: flex;
+	right: -1%;
+	position: absolute;
+	justify-content: space-between;
+	
+}
+.photo{
+	width: 50%;
+	height: 306px;
+	background: beige;
+	text-align: center;
+}*/
+.form-group{
+	position: relative;
+}
+.form-group .fa{
+	position: absolute;
+	top: 50%;
+	right: 8%;
+	display: none;
+}
+.fa-times{
+	color: black;
+}
+.fa-check{
+	color: blue;
+
+}
+#errors{
+	color: red;
+	font-family: cursive;
+	font-size: 1.5rem;
+	padding-left: 20px;
+	text-shadow:1px 5px 3px 10px blue;
+	/*background: beige;*/
+	cursor: pointer;
+	text-align: center;
+}
